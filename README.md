@@ -42,6 +42,10 @@
 python -m http.server 8765
 ```
 
+## 运维记录
+
+- 2026-10-29：网站运维由 Elvis 交接至 lian-JQ（GitHub @lian-JQ）。首次推送链路验证：本地 → GitHub → Netlify 自动部署。
+
 ## 联系方式（页面统一口径）
 
 - 邮箱：elvis@dengpantrade.com
