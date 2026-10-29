@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact Us — Request a Quote | Longyan Dengpan Trading</title>
+<meta name="description" content="Contact Longyan Dengpan Trading for industrial equipment and spare parts quotations. Send your part number, model or nameplate photo — we respond within 24 hours on working days.">
+<link rel="canonical" href="https://www.dengpantrade.com/contact.html">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Longyan Dengpan Trading Co., Ltd.">
+<meta property="og:title" content="Contact Us — Request a Quote | Longyan Dengpan Trading">
+<meta property="og:description" content="Send your part number, model or nameplate photo — we respond within 24 hours on working days.">
+<meta property="og:url" content="https://www.dengpantrade.com/contact.html">
+<meta property="og:image" content="https://www.dengpantrade.com/og-image.png">
+<meta name="twitter:card" content="summary_large_image">
+<style>
+  :root{
+    --ink:#15181d; --steel:#232a33; --steel2:#2e3742;
+    --orange:#ff6a13; --amber:#f5a623;
+    --bg:#f4f5f7; --card:#ffffff; --line:#dde1e7; --muted:#6b7280; --text:#1f2630;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{font-family:"Segoe UI",system-ui,Arial,sans-serif;color:var(--text);background:var(--bg);line-height:1.6;-webkit-font-smoothing:antialiased}
+  a{text-decoration:none;color:inherit}
+  .wrap{max-width:1200px;margin:0 auto;padding:0 24px}
+
+  header{position:sticky;top:0;z-index:50;background:var(--ink);border-bottom:3px solid var(--orange)}
+  .nav{display:flex;align-items:center;justify-content:space-between;height:68px}
+  .logo{display:flex;align-items:center;gap:10px;color:#fff;font-weight:800;font-size:22px;letter-spacing:2px}
+  .logo .mark{width:34px;height:34px;background:var(--orange);display:flex;align-items:center;justify-content:center;color:#fff;font-weight:900;font-size:18px;clip-path:polygon(0 0,100% 0,100% 70%,0 100%)}
+  .menu{display:flex;gap:30px;align-items:center}
+  .menu a{color:#cfd4db;font-size:14px;font-weight:600;letter-spacing:.4px;text-transform:uppercase;transition:.2s}
+  .menu a:hover,.menu a.on{color:var(--orange)}
+  .btn-quote{background:var(--orange);color:#fff;padding:10px 20px;font-weight:700;font-size:13px;letter-spacing:1px;text-transform:uppercase;border:none;cursor:pointer;clip-path:polygon(8px 0,100% 0,100% calc(100% - 8px),calc(100% - 8px) 100%,0 100%,0 8px)}
+  .btn-quote:hover{background:var(--amber)}
+
+  .phero{background:linear-gradient(120deg,var(--ink) 0%,var(--steel) 60%,#1b2128 100%);color:#fff;position:relative;overflow:hidden}
+  .phero::after{content:"";position:absolute;right:-80px;top:-80px;width:420px;height:420px;background:radial-gradient(circle,rgba(255,106,19,.22),transparent 70%)}
+  .phero .wrap{padding:64px 24px 56px;position:relative;z-index:2}
+  .tag{display:inline-block;color:var(--orange);font-weight:700;letter-spacing:3px;font-size:12px;text-transform:uppercase;border-left:3px solid var(--orange);padding-left:10px;margin-bottom:18px}
+  .phero h1{font-size:38px;line-height:1.15;font-weight:800;max-width:760px;letter-spacing:-.4px}
+  .phero p{margin-top:16px;font-size:16px;color:#b9c0c9;max-width:640px}
+
+  section{padding:64px 0}
+  .layout{display:grid;grid-template-columns:1fr 1.25fr;gap:44px;align-items:start}
+
+  /* CONTACT PANEL */
+  .cblock{margin-bottom:28px}
+  .cblock:last-child{margin-bottom:0}
+  .cblock .h{font-size:12px;text-transform:uppercase;letter-spacing:2px;color:var(--orange);font-weight:700;margin-bottom:9px}
+  .cblock .v{font-size:17px;font-weight:700;color:var(--ink);word-break:break-word}
+  .cblock .v a:hover{color:var(--orange)}
+  .cblock .s{font-size:13px;color:var(--muted);margin-top:5px}
+  .divider{height:1px;background:var(--line);margin:30px 0}
+
+  .resp{background:var(--card);border:1px solid var(--line);border-left:4px solid var(--orange);padding:20px 22px;margin-top:30px}
+  .resp .t{font-weight:800;font-size:14px;color:var(--ink)}
+  .resp p{font-size:13px;color:#56606b;margin-top:7px}
+
+  /* FORM */
+  .formwrap{background:var(--card);border:1px solid var(--line);border-top:4px solid var(--orange);padding:34px 32px}
+  .formwrap h2{font-size:22px;font-weight:800}
+  .formwrap .sub{font-size:13px;color:var(--muted);margin-top:6px;margin-bottom:26px}
+  .frow{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-bottom:16px}
+  .field{display:flex;flex-direction:column}
+  .field.full{grid-column:1 / -1}
+  .field label{font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:.8px;color:#4a535e;margin-bottom:7px}
+  .field label .req{color:var(--orange)}
+  .field input,.field select,.field textarea{
+    font-family:inherit;font-size:14px;color:var(--text);
+    border:1px solid #c9d0d8;background:#fbfcfd;padding:12px 13px;transition:.15s;width:100%;
+  }
+  .field input:focus,.field select:focus,.field textarea:focus{outline:none;border-color:var(--orange);background:#fff;box-shadow:0 0 0 3px rgba(255,106,19,.1)}
+  .field textarea{resize:vertical;min-height:120px}
+  .field .hint{font-size:11.5px;color:var(--muted);margin-top:5px}
+  .submit{
+    background:var(--orange);color:#fff;border:none;cursor:pointer;
+    padding:15px 34px;font-weight:800;font-size:14px;letter-spacing:1px;text-transform:uppercase;
+    clip-path:polygon(9px 0,100% 0,100% calc(100% - 9px),calc(100% - 9px) 100%,0 100%,0 9px);
+    font-family:inherit;transition:.2s;
+  }
+  .submit:hover{background:var(--amber)}
+  .formfoot{display:flex;align-items:center;gap:16px;flex-wrap:wrap;margin-top:22px}
+  .formfoot .note{font-size:12px;color:var(--muted);max-width:340px}
+
+  /* CHECKLIST */
+  .chk{background:var(--ink);color:#fff;padding:64px 0}
+  .chk .sec-head .k{color:var(--orange);font-weight:700;letter-spacing:3px;font-size:12px;text-transform:uppercase}
+  .chk h2{font-size:28px;font-weight:800;margin-top:8px}
+  .chk .lead{color:#9aa3ad;margin-top:10px;max-width:680px;font-size:15px}
+  .kgrid{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;margin-top:34px}
+  .kitem{background:var(--steel2);border:1px solid #3a434e;border-top:3px solid var(--orange);padding:22px 20px}
+  .kitem .num{color:var(--orange);font-weight:800;font-size:13px;letter-spacing:2px}
+  .kitem h4{color:#fff;font-size:15px;font-weight:700;margin-top:8px}
+  .kitem p{color:#9aa3ad;font-size:12.5px;margin-top:7px}
+
+  footer{background:#101318;color:#9aa3ad;padding:54px 0 30px}
+  .fgrid{display:grid;grid-template-columns:1.6fr 1fr 1fr 1fr;gap:30px}
+  footer .logo{margin-bottom:14px}
+  footer p{font-size:13px;max-width:320px}
+  footer h5{color:#fff;font-size:14px;text-transform:uppercase;letter-spacing:1px;margin-bottom:14px}
+  footer ul{list-style:none}
+  footer ul li{font-size:13px;margin-bottom:9px}
+  footer ul li a:hover{color:var(--orange)}
+  .fbot{border-top:1px solid #2a313a;margin-top:36px;padding-top:20px;font-size:12px;color:#6b7280;display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px}
+
+
+  @media(max-width:560px){
+    .wrap{padding:0 18px}
+    .phero .wrap{padding:48px 18px 44px}
+    .phero h1{font-size:26px}
+    .phero p{font-size:14.5px}
+    section{padding:50px 0}
+    .kgrid,.fgrid{grid-template-columns:1fr}
+    .formwrap{padding:24px 18px}
+    .chk{padding:48px 0}
+    .frow{gap:14px}
+  }
+  @media(max-width:900px){
+    .layout{grid-template-columns:1fr;gap:34px}
+    .frow{grid-template-columns:1fr}
+    .kgrid{grid-template-columns:1fr 1fr}
+    .fgrid{grid-template-columns:1fr 1fr}
+    .phero h1{font-size:29px}
+    .menu a:not(.btn-quote){display:none}
+    .formwrap{padding:26px 20px}
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap nav">
+    <a href="index.html" class="logo"><span class="mark">D</span>DENGPAN</a>
+    <nav class="menu">
+      <a href="index.html">Home</a>
+      <a href="products.html">Products</a>
+      <a href="index.html#apps">Applications</a>
+      <a href="about.html">About</a>
+      <a href="contact.html" class="on">Contact</a>
+      <a href="contact.html" class="btn-quote">Get a Quote</a>
+    </nav>
+  </div>
+</header>
+
+<section class="phero">
+  <div class="wrap">
+    <span class="tag">Get in Touch</span>
+    <h1>Request a Quotation</h1>
+    <p>Send us a part number, model, drawing or a photo of the nameplate. Our team responds within 24 hours on working days — including lead time and shipping options to your port.</p>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="layout">
+
+      <!-- LEFT: CONTACT DETAILS -->
+      <div>
+        <div class="cblock">
+          <div class="h">Email</div>
+          <div class="v"><a href="mailto:elvis@dengpantrade.com">elvis@dengpantrade.com</a></div>
+          <div class="s">Best for drawings, bills of material and tender documents.</div>
+        </div>
+        <div class="cblock">
+          <div class="h">Phone / WhatsApp / Viber</div>
+          <div class="v"><a href="tel:+8618605970698">+86 186 0597 0698</a></div>
+          <div class="s">WhatsApp and Viber available for urgent spares.</div>
+        </div>
+        <div class="cblock">
+          <div class="h">Address</div>
+          <div class="v">Longyan, Fujian, China</div>
+          <div class="s">Longyan Dengpan Trading Co., Ltd.</div>
+        </div>
+        <div class="cblock">
+          <div class="h">Working Hours</div>
+          <div class="v">Mon – Sat, 08:30 – 18:00 (GMT+8)</div>
+          <div class="s">Urgent breakdown enquiries are answered outside these hours where possible.</div>
+        </div>
+
+        <div class="divider"></div>
+
+        <div class="cblock">
+          <div class="h">What We Sell</div>
+          <div class="s" style="font-size:14px;line-height:1.8">
+            Valves · Actuators · Vacuum &amp; screw pumps · Electric motors · Electrical equipment
+            and control · Environmental protection equipment · Coal mill parts ·
+            Sootblower parts · Power transmission equipment · Firefighting equipment ·
+            Crane &amp; loading equipment · Instruments · Fasteners &amp; flanges · Piping
+          </div>
+        </div>
+
+        <div class="resp">
+          <div class="t">Trading Terms</div>
+          <p>FOB / CIF / FCA · T/T and L/C accepted · Consolidated shipments available · Full export documentation including commercial invoice, packing list, certificate of origin and material / test certificates where applicable.</p>
+        </div>
+      </div>
+
+      <!-- RIGHT: FORM -->
+      <div class="formwrap">
+        <h2>Send Your Enquiry</h2>
+        <div class="sub">Fields marked <span style="color:var(--orange);font-weight:700">*</span> are required. The more detail you give, the faster we can quote.</div>
+
+        <form id="inq" novalidate>
+          <div class="frow">
+            <div class="field">
+              <label for="name">Your Name <span class="req">*</span></label>
+              <input type="text" id="name" name="name" required placeholder="e.g. Juan Dela Cruz">
+            </div>
+            <div class="field">
+              <label for="company">Company</label>
+              <input type="text" id="company" name="company" placeholder="Company / Plant name">
+            </div>
+          </div>
+
+          <div class="frow">
+            <div class="field">
+              <label for="email">Email <span class="req">*</span></label>
+              <input type="email" id="email" name="email" required placeholder="name@company.com">
+            </div>
+            <div class="field">
+              <label for="country">Country / Port of Delivery</label>
+              <input type="text" id="country" name="country" placeholder="e.g. Philippines / Manila">
+            </div>
+          </div>
+
+          <div class="frow">
+            <div class="field">
+              <label for="phone">Phone / WhatsApp</label>
+              <input type="text" id="phone" name="phone" placeholder="+63 ...">
+            </div>
+            <div class="field">
+              <label for="category">Product Category</label>
+              <select id="category" name="category">
+                <option value="">— Select —</option>
+                <option>Valves</option>
+                <option>Actuators</option>
+                <option>Pumps (Vacuum / Screw / Lube Oil)</option>
+                <option>Electric Motors</option>
+                <option>Electrical Equipment &amp; Control</option>
+                <option>Environmental Protection</option>
+                <option>Coal Mill Parts</option>
+                <option>Sootblower Parts</option>
+                <option>Power Transmission Equipment</option>
+                <option>Firefighting Equipment</option>
+                <option>Crane / Loading Equipment</option>
+                <option>Instruments &amp; Meters</option>
+                <option>Fasteners, Flanges &amp; Gaskets</option>
+                <option>Piping &amp; Fittings</option>
+                <option>Other / Not Sure</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="frow">
+            <div class="field full">
+              <label for="partno">Part Number / Model / Drawing Ref.</label>
+              <input type="text" id="partno" name="partno" placeholder="e.g. D971X-16R DN250 · or attach in your email">
+              <div class="hint">Obsolete or discontinued OEM numbers are fine — we cross-reference them.</div>
+            </div>
+          </div>
+
+          <div class="frow">
+            <div class="field full">
+              <label for="message">Requirement Details <span class="req">*</span></label>
+              <textarea id="message" name="message" required placeholder="Quantity, technical specification, required delivery date, and any certificates needed (e.g. EN 10204 3.1, COO)."></textarea>
+            </div>
+          </div>
+
+          <div class="formfoot">
+            <button type="submit" class="submit">Send Enquiry</button>
+            <div class="note">This opens your email client with the details filled in. You can also email us directly and attach drawings.</div>
+          </div>
+        </form>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<section class="chk">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="k">Faster Quotes</div>
+      <h2>What to Include in Your Enquiry</h2>
+      <p class="lead">Most delays in spare-parts sourcing come from missing data, not from price. If you can provide the four points below, we can usually confirm availability and price in one exchange.</p>
+    </div>
+    <div class="kgrid">
+      <div class="kitem"><div class="num">01</div><h4>Exact Identification</h4><p>Part number, model, or a clear photo of the nameplate and the worn part.</p></div>
+      <div class="kitem"><div class="num">02</div><h4>Quantity &amp; Urgency</h4><p>How many units, and whether it is for stock or an ongoing outage.</p></div>
+      <div class="kitem"><div class="num">03</div><h4>Technical Spec</h4><p>Material, pressure class, size, voltage, rotation — whatever applies.</p></div>
+      <div class="kitem"><div class="num">04</div><h4>Delivery &amp; Documents</h4><p>Destination port, Incoterm, and certificates required for clearance.</p></div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="fgrid">
+      <div>
+        <div class="logo"><span class="mark">D</span>DENGPAN</div>
+        <p>Longyan Dengpan Trading Co., Ltd. — Your reliable partner for industrial equipment and genuine spare parts for power plants worldwide.</p>
+      </div>
+      <div><h5>Products</h5><ul>
+        <li><a href="products.html">Valves</a></li>
+        <li><a href="products.html">Actuators</a></li>
+        <li><a href="products.html">Environmental Equipment</a></li>
+        <li><a href="products.html">Electrical Equipment</a></li>
+      </ul></div>
+      <div><h5>Company</h5><ul>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="index.html#apps">Applications</a></li>
+        <li><a href="products.html">Product Catalogue</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul></div>
+      <div><h5>Contact</h5><ul>
+        <li>Email: elvis@dengpantrade.com</li>
+        <li>Tel / WhatsApp: +86 186 0597 0698</li>
+        <li>Longyan, Fujian, China</li>
+      </ul></div>
+    </div>
+    <div class="fbot">
+      <span>© 2026 Longyan Dengpan Trading Co., Ltd. All rights reserved.</span>
+      <span>Industrial Equipment &amp; Spare Parts Export</span>
+    </div>
+  </div>
+</footer>
+
+<script>
+(function(){
+  var form = document.getElementById('inq');
+  form.addEventListener('submit', function(e){
+    e.preventDefault();
+    var g = function(id){ var el=document.getElementById(id); return el ? el.value.trim() : ''; };
+    var name=g('name'), email=g('email'), msg=g('message');
+
+    if(!name || !email || !msg){
+      alert('Please fill in your name, email and requirement details.');
+      return;
+    }
+    if(!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)){
+      alert('Please enter a valid email address.');
+      return;
+    }
+
+    var subject = 'Quotation Enquiry' + (g('partno') ? ' — ' + g('partno') : (g('category') ? ' — ' + g('category') : ''));
+    var lines = [
+      'Name: ' + name,
+      'Company: ' + g('company'),
+      'Email: ' + email,
+      'Phone / WhatsApp: ' + g('phone'),
+      'Country / Port: ' + g('country'),
+      'Product Category: ' + g('category'),
+      'Part No. / Model: ' + g('partno'),
+      '',
+      'Requirement Details:',
+      msg,
+      '',
+      '---',
+      'Sent from dengpantrade.com'
+    ];
+    var body = lines.join('\n');
+    window.location.href = 'mailto:elvis@dengpantrade.com'
+      + '?subject=' + encodeURIComponent(subject)
+      + '&body=' + encodeURIComponent(body);
+  });
+})();
+</script>
+
+</body>
+</html>

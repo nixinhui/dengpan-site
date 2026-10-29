@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>About Us — Longyan Dengpan Trading Co., Ltd.</title>
+<meta name="description" content="Longyan Dengpan Trading Co., Ltd. — a China-based channel partner supplying industrial equipment and genuine spare parts to coal-fired power plants and paper mills across the Philippines, Southeast Asia and Africa.">
+<link rel="canonical" href="https://www.dengpantrade.com/about.html">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Longyan Dengpan Trading Co., Ltd.">
+<meta property="og:title" content="About Us — Longyan Dengpan Trading Co., Ltd.">
+<meta property="og:description" content="A China-based channel partner supplying industrial equipment and genuine spare parts to thermal power plants across Southeast Asia, South Asia and Africa.">
+<meta property="og:url" content="https://www.dengpantrade.com/about.html">
+<meta property="og:image" content="https://www.dengpantrade.com/og-image.png">
+<meta name="twitter:card" content="summary_large_image">
+<style>
+  :root{
+    --ink:#15181d; --steel:#232a33; --steel2:#2e3742;
+    --orange:#ff6a13; --amber:#f5a623;
+    --bg:#f4f5f7; --card:#ffffff; --line:#dde1e7; --muted:#6b7280; --text:#1f2630;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{font-family:"Segoe UI",system-ui,Arial,sans-serif;color:var(--text);background:var(--bg);line-height:1.6;-webkit-font-smoothing:antialiased}
+  a{text-decoration:none;color:inherit}
+  .wrap{max-width:1200px;margin:0 auto;padding:0 24px}
+
+  /* HEADER */
+  header{position:sticky;top:0;z-index:50;background:var(--ink);border-bottom:3px solid var(--orange)}
+  .nav{display:flex;align-items:center;justify-content:space-between;height:68px}
+  .logo{display:flex;align-items:center;gap:10px;color:#fff;font-weight:800;font-size:22px;letter-spacing:2px}
+  .logo .mark{width:34px;height:34px;background:var(--orange);display:flex;align-items:center;justify-content:center;color:#fff;font-weight:900;font-size:18px;clip-path:polygon(0 0,100% 0,100% 70%,0 100%)}
+  .menu{display:flex;gap:30px;align-items:center}
+  .menu a{color:#cfd4db;font-size:14px;font-weight:600;letter-spacing:.4px;text-transform:uppercase;transition:.2s}
+  .menu a:hover,.menu a.on{color:var(--orange)}
+  .btn-quote{background:var(--orange);color:#fff;padding:10px 20px;font-weight:700;font-size:13px;letter-spacing:1px;text-transform:uppercase;border:none;cursor:pointer;clip-path:polygon(8px 0,100% 0,100% calc(100% - 8px),calc(100% - 8px) 100%,0 100%,0 8px)}
+  .btn-quote:hover{background:var(--amber)}
+
+  /* PAGE HERO */
+  .phero{background:linear-gradient(120deg,var(--ink) 0%,var(--steel) 60%,#1b2128 100%);color:#fff;position:relative;overflow:hidden}
+  .phero::after{content:"";position:absolute;right:-80px;top:-80px;width:420px;height:420px;background:radial-gradient(circle,rgba(255,106,19,.22),transparent 70%)}
+  .phero .wrap{padding:66px 24px 58px;position:relative;z-index:2}
+  .tag{display:inline-block;color:var(--orange);font-weight:700;letter-spacing:3px;font-size:12px;text-transform:uppercase;border-left:3px solid var(--orange);padding-left:10px;margin-bottom:18px}
+  .phero h1{font-size:40px;line-height:1.15;font-weight:800;max-width:780px;letter-spacing:-.4px}
+  .phero p{margin-top:18px;font-size:16px;color:#b9c0c9;max-width:660px}
+
+  section{padding:70px 0}
+  .sec-head{margin-bottom:38px}
+  .sec-head .k{color:var(--orange);font-weight:700;letter-spacing:3px;font-size:12px;text-transform:uppercase}
+  .sec-head h2{font-size:30px;font-weight:800;margin-top:8px;letter-spacing:-.3px}
+  .sec-head p{color:var(--muted);margin-top:10px;max-width:700px}
+
+  /* OVERVIEW */
+  .overview{display:grid;grid-template-columns:1.35fr 1fr;gap:44px;align-items:start}
+  .overview .body p{font-size:15.5px;color:#3d4652;margin-bottom:16px}
+  .overview .body p strong{color:var(--ink)}
+  .facts{background:var(--card);border:1px solid var(--line);border-top:4px solid var(--orange)}
+  .facts .row{display:flex;justify-content:space-between;gap:16px;padding:15px 22px;border-bottom:1px solid var(--line);font-size:14px}
+  .facts .row:last-child{border-bottom:none}
+  .facts .row .l{color:var(--muted);font-size:12.5px;text-transform:uppercase;letter-spacing:.6px;flex:0 0 44%}
+  .facts .row .v{font-weight:700;text-align:right;color:var(--ink)}
+
+  /* CORE BUSINESS */
+  .biz{background:var(--card);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+  .bgrid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+  .bcard{border:1px solid var(--line);border-top:4px solid var(--steel);padding:30px 26px;background:var(--bg);transition:.2s}
+  .bcard:hover{border-top-color:var(--orange);transform:translateY(-4px);box-shadow:0 14px 30px rgba(20,24,29,.1)}
+  .bcard .n{color:var(--orange);font-weight:800;font-size:13px;letter-spacing:2px}
+  .bcard h3{font-size:19px;font-weight:700;margin-top:10px}
+  .bcard .cn{font-size:13px;color:var(--muted);margin-top:2px}
+  .bcard p{font-size:13.5px;color:#56606b;margin-top:14px}
+
+  /* CATEGORIES */
+  .cgrid{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}
+  .citem{background:var(--card);border:1px solid var(--line);padding:18px 16px;transition:.2s;border-left:3px solid var(--steel)}
+  .citem:hover{border-left-color:var(--orange);background:#fff}
+  .citem .nm{font-size:14px;font-weight:700;color:var(--ink)}
+  .citem .sub{font-size:11.5px;color:var(--muted);margin-top:4px;letter-spacing:.2px}
+  .note{margin-top:18px;font-size:13px;color:var(--muted);border-left:3px solid var(--orange);padding-left:14px}
+
+  /* PARTNERS */
+  .partners{background:linear-gradient(120deg,var(--ink),var(--steel));color:#fff}
+  .partners .sec-head h2,.partners .sec-head .k{color:#fff}
+  .partners .sec-head p{color:#9aa3ad}
+  .ptwo{display:grid;grid-template-columns:1.15fr 1fr;gap:44px}
+  .ptwo h4{font-size:13px;text-transform:uppercase;letter-spacing:2px;color:var(--orange);margin-bottom:16px;font-weight:700}
+  .plist{display:flex;flex-wrap:wrap;gap:9px}
+  .plist span{background:var(--steel2);border:1px solid #3a434e;padding:8px 14px;font-size:13px;color:#dfe4ea}
+  .plist span.brand{background:transparent;border-color:#4a535e;color:#b9c0c9}
+
+  /* ADVANTAGES */
+  .wgrid{display:grid;grid-template-columns:repeat(4,1fr);gap:24px}
+  .witem{border-left:3px solid var(--orange);padding-left:18px}
+  .witem .n{font-size:32px;font-weight:800;color:var(--ink)}
+  .witem h4{font-size:16px;font-weight:700;margin-top:6px}
+  .witem p{font-size:13px;color:var(--muted);margin-top:8px}
+
+  /* TRACK */
+  .track{background:var(--card);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+  .tgrid{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}
+  .tcard{text-align:center;padding:26px 16px;border:1px solid var(--line)}
+  .tcard .c{font-size:24px;font-weight:800;color:var(--orange);letter-spacing:1px}
+  .tcard .d{font-size:13px;color:#56606b;margin-top:6px}
+
+  /* CTA */
+  .band{background:var(--orange);color:#fff;text-align:center;padding:54px 0}
+  .band h2{font-size:30px;font-weight:800}
+  .band p{margin-top:10px;font-size:16px;opacity:.95}
+  .band .btn-primary{background:var(--ink);color:#fff;margin-top:24px;display:inline-block;padding:15px 30px;font-weight:700;letter-spacing:1px;text-transform:uppercase;font-size:14px}
+  .band .btn-primary:hover{background:#000}
+
+  /* FOOTER */
+  footer{background:var(--ink);color:#9aa3ad;padding:54px 0 30px}
+  .fgrid{display:grid;grid-template-columns:1.6fr 1fr 1fr 1fr;gap:30px}
+  footer .logo{margin-bottom:14px}
+  footer p{font-size:13px;max-width:320px}
+  footer h5{color:#fff;font-size:14px;text-transform:uppercase;letter-spacing:1px;margin-bottom:14px}
+  footer ul{list-style:none}
+  footer ul li{font-size:13px;margin-bottom:9px}
+  footer ul li a:hover{color:var(--orange)}
+  .fbot{border-top:1px solid #2a313a;margin-top:36px;padding-top:20px;font-size:12px;color:#6b7280;display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px}
+
+
+  @media(max-width:560px){
+    .wrap{padding:0 18px}
+    .phero .wrap{padding:48px 18px 44px}
+    .phero h1{font-size:26px}
+    .phero p{font-size:14.5px}
+    .sec-head h2{font-size:24px}
+    section{padding:52px 0}
+    .facts .row{flex-direction:column;gap:3px;padding:13px 18px}
+    .facts .row .l{flex:none}
+    .facts .row .v{text-align:left}
+    .bgrid,.wgrid,.tgrid,.cgrid{grid-template-columns:1fr}
+    .fgrid{grid-template-columns:1fr}
+    .bcard{padding:24px 20px}
+  }
+  @media(max-width:900px){
+    .overview,.ptwo{grid-template-columns:1fr;gap:28px}
+    .bgrid,.wgrid,.tgrid{grid-template-columns:repeat(2,1fr)}
+    .cgrid{grid-template-columns:repeat(2,1fr)}
+    .fgrid{grid-template-columns:1fr 1fr}
+    .phero h1{font-size:30px}
+    .menu a:not(.btn-quote){display:none}
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap nav">
+    <a href="index.html" class="logo"><span class="mark">D</span>DENGPAN</a>
+    <nav class="menu">
+      <a href="index.html">Home</a>
+      <a href="products.html">Products</a>
+      <a href="index.html#apps">Applications</a>
+      <a href="about.html" class="on">About</a>
+      <a href="contact.html">Contact</a>
+      <a href="contact.html" class="btn-quote">Get a Quote</a>
+    </nav>
+  </div>
+</header>
+
+<section class="phero">
+  <div class="wrap">
+    <span class="tag">Longyan Dengpan Trading Co., Ltd.</span>
+    <h1>Your Trusted Channel Partner for Industrial Equipment &amp; Spare Parts</h1>
+    <p>As our clients' long-term supply channel in China, we connect overseas power plants and paper mills with qualified Chinese manufacturers — handling sourcing, quality inspection and consolidated export end to end.</p>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="overview">
+      <div class="body">
+        <div class="sec-head"><div class="k">Company Overview</div><h2>Who We Are</h2></div>
+        <p>Founded in <strong>2023</strong> and based in <strong>Longyan, Fujian, China</strong>, Longyan Dengpan Trading is a licensed import &amp; export trading company. We provide one-stop sourcing, supply and export services for industrial equipment and spare parts, serving clients and retrofit projects for <strong>coal-fired power plants and paper plants</strong>.</p>
+        <p>We are the supply channel our clients rely on. A trader sells once; a channel partner stays. We keep qualified manufacturers on call, learn your plant's exact equipment, and turn China's manufacturing base into a dependable, repeatable source — the right part matched to a drawing or a worn nameplate, supplied again and again.</p>
+        <p>Today we supply clients across the <strong>Philippines, Southeast Asia and Africa</strong>, spanning power generation, construction and processing industries — from single emergency spares to complete retrofit packages.</p>
+      </div>
+      <div class="facts">
+        <div class="row"><div class="l">Established</div><div class="v">2023</div></div>
+        <div class="row"><div class="l">Head Office</div><div class="v">Longyan, Fujian, China</div></div>
+        <div class="row"><div class="l">Company Type</div><div class="v">Licensed Import &amp; Export Trader</div></div>
+        <div class="row"><div class="l">Core Industries</div><div class="v">Coal Power · Paper</div></div>
+        <div class="row"><div class="l">Markets</div><div class="v">Philippines · SE Asia · Africa</div></div>
+        <div class="row"><div class="l">Product Scope</div><div class="v">14 Equipment Categories</div></div>
+        <div class="row"><div class="l">Business Model</div><div class="v">Authorized Supply Channel</div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="biz">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="k">Core Business</div>
+      <h2>Three Things We Do</h2>
+      <p>Supply, sourcing and technical support — the same team handles all three, so nothing gets lost between them.</p>
+    </div>
+    <div class="bgrid">
+      <div class="bcard">
+        <div class="n">01</div>
+        <h3>Equipment &amp; Spare Parts Supply</h3>
+        <div class="cn">设备与备件供应</div>
+        <p>Industrial valves, pumps, mechanical equipment, electrical systems, instruments, tools and MRO spare parts — sourced from established domestic and international brands, supplied as genuine products with reliable quality.</p>
+      </div>
+      <div class="bcard">
+        <div class="n">02</div>
+        <h3>Sourcing &amp; Procurement Service</h3>
+        <div class="cn">采购代理服务</div>
+        <p>We procure on your behalf from China's manufacturing base: supplier qualification, quotation comparison, quality inspection and consolidated export — one contact, one shipment, one set of documents.</p>
+      </div>
+      <div class="bcard">
+        <div class="n">03</div>
+        <h3>Technical Support</h3>
+        <div class="cn">技术支持</div>
+        <p>With working knowledge of industrial plant operations, we support accurate part matching and give timely technical advice for maintenance and repair — including cross-referencing obsolete or discontinued items.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="k">Product Scope</div>
+      <h2>What We Supply</h2>
+      <p>Fourteen categories covering power plant balance-of-plant, environmental systems and general industrial MRO.</p>
+    </div>
+    <div class="cgrid">
+      <div class="citem"><div class="nm">Firefighting Equipment</div><div class="sub">消防设备</div></div>
+      <div class="citem"><div class="nm">Actuators</div><div class="sub">执行器 · Chuanyi / Fisher / Keystone</div></div>
+      <div class="citem"><div class="nm">Vacuum Pumps</div><div class="sub">真空泵</div></div>
+      <div class="citem"><div class="nm">Crane Parts</div><div class="sub">起重配件</div></div>
+      <div class="citem"><div class="nm">Mechanical Transmission</div><div class="sub">机械传动设备</div></div>
+      <div class="citem"><div class="nm">Electric Motors</div><div class="sub">电机</div></div>
+      <div class="citem"><div class="nm">Electrical Equipment</div><div class="sub">电气设备</div></div>
+      <div class="citem"><div class="nm">Electronic Components</div><div class="sub">电子元件</div></div>
+      <div class="citem"><div class="nm">Environmental Protection Eq.</div><div class="sub">环保设备 · 除尘输灰</div></div>
+      <div class="citem"><div class="nm">Coal Mill Parts</div><div class="sub">磨煤机配件</div></div>
+      <div class="citem"><div class="nm">Sootblower Parts</div><div class="sub">吹灰器配件</div></div>
+      <div class="citem"><div class="nm">Power Transmission Eq.</div><div class="sub">输配电设备</div></div>
+      <div class="citem"><div class="nm">Valves</div><div class="sub">阀门 · globe / gate / butterfly / check / ball</div></div>
+      <div class="citem"><div class="nm">Loading &amp; Unloading Eq.</div><div class="sub">装卸设备</div></div>
+    </div>
+    <div class="note">Looking for something outside this list? Send the part number, model or a photo of the nameplate — cross-referencing and sourcing for non-standard items is a routine part of our work.</div>
+  </div>
+</section>
+
+<section class="partners">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="k">Supply Chain</div>
+      <h2>Partner Brands &amp; Suppliers</h2>
+      <p>We qualify and partner with manufacturers directly — not open marketplaces — which is what lets us stand behind material certificates and dimensional accuracy, and keep a stable supply line open for the clients we serve.</p>
+    </div>
+    <div class="ptwo">
+      <div>
+        <h4>Key Suppliers</h4>
+        <div class="plist">
+          <span>HNWH Heavy Machinery</span>
+          <span>POWERCHINA SPEM</span>
+          <span>Shanghai Electric</span>
+          <span>Qingdao Daneng</span>
+          <span>Yangzhong Shenyang Heat Exchanger</span>
+          <span>Guangzhou HOKO Electric</span>
+          <span>Beijing CEP Green Wave</span>
+          <span>Wuxi Huadong</span>
+          <span>Shanghai RPT</span>
+          <span>Jiangnan Valve</span>
+          <span>Xiangtan Motor</span>
+          <span>Simo Motor</span>
+          <span>Wuhan Diamond</span>
+        </div>
+      </div>
+      <div>
+        <h4>Representative Brands</h4>
+        <div class="plist">
+          <span class="brand">ABB</span>
+          <span class="brand">Rotork</span>
+          <span class="brand">Fisher</span>
+          <span class="brand">Keystone</span>
+          <span class="brand">Honeywell</span>
+          <span class="brand">Schneider Electric</span>
+          <span class="brand">OMRON</span>
+          <span class="brand">Parker</span>
+          <span class="brand">Danfoss</span>
+          <span class="brand">NASH</span>
+          <span class="brand">Toshiba</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="k">Why Dengpan</div>
+      <h2>Service Advantages</h2>
+    </div>
+    <div class="wgrid">
+      <div class="witem"><div class="n">01</div><h4>Precise Supply</h4><p>Deep understanding of industrial systems, so recommendations and supply match what the plant actually runs.</p></div>
+      <div class="witem"><div class="n">02</div><h4>Quality Assurance</h4><p>Strict supply-chain control. All products comply with industry standards, with test and material certificates where required.</p></div>
+      <div class="witem"><div class="n">03</div><h4>Rapid Response</h4><p>Efficient logistics and inventory access for urgent needs — minimising downtime when a unit is already off.</p></div>
+      <div class="witem"><div class="n">04</div><h4>One-Stop Export</h4><p>From sourcing to delivery, we manage the full export process: invoicing, packing, certificates and shipping documents.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="track">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="k">Track Record</div>
+      <h2>Where We Have Delivered</h2>
+      <p>Our clients span power, construction and processing industries. We have supplied spare parts and equipment to the following markets.</p>
+    </div>
+    <div class="tgrid">
+      <div class="tcard"><div class="c">PHILIPPINES</div><div class="d">Coal power plants, retrofit &amp; outage spares</div></div>
+      <div class="tcard"><div class="c">INDONESIA</div><div class="d">Power &amp; processing industry equipment</div></div>
+      <div class="tcard"><div class="c">BANGLADESH</div><div class="d">Power plant mechanical &amp; electrical parts</div></div>
+      <div class="tcard"><div class="c">AFRICA</div><div class="d">Industrial equipment &amp; MRO supply</div></div>
+    </div>
+  </div>
+</section>
+
+<section class="band">
+  <div class="wrap">
+    <h2>Send Us Your Part Number</h2>
+    <p>Model, drawing or a photo of the nameplate is enough to start. We respond within 24 hours on working days.</p>
+    <a href="contact.html" class="btn-primary">Contact Our Team</a>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="fgrid">
+      <div>
+        <div class="logo"><span class="mark">D</span>DENGPAN</div>
+        <p>Longyan Dengpan Trading Co., Ltd. — Your channel partner for industrial equipment and genuine spare parts for power plants worldwide.</p>
+      </div>
+      <div><h5>Products</h5><ul>
+        <li><a href="products.html">Valves</a></li>
+        <li><a href="products.html">Actuators</a></li>
+        <li><a href="products.html">Environmental Equipment</a></li>
+        <li><a href="products.html">Electrical Equipment</a></li>
+      </ul></div>
+      <div><h5>Company</h5><ul>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="index.html#apps">Applications</a></li>
+        <li><a href="products.html">Product Catalogue</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul></div>
+      <div><h5>Contact</h5><ul>
+        <li>Email: elvis@dengpantrade.com</li>
+        <li>Tel / WhatsApp: +86 186 0597 0698</li>
+        <li>Longyan, Fujian, China</li>
+      </ul></div>
+    </div>
+    <div class="fbot">
+      <span>© 2026 Longyan Dengpan Trading Co., Ltd. All rights reserved.</span>
+      <span>Industrial Equipment &amp; Spare Parts Export</span>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>

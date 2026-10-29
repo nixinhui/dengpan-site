@@ -1,0 +1,17 @@
+# 系统与编辑器杂项
+.DS_Store
+Thumbs.db
+desktop.ini
+*.swp
+.idea/
+.vscode/
+
+# 部署包与临时文件（不进仓库）
+*.zip
+*.bak
+*.tmp
+~$*
+
+# 构建工具输出（截图、脚本产物）
+_screenshots/
+*.log
