@@ -53,6 +53,8 @@
   .card:hover{transform:translateY(-4px);box-shadow:0 14px 30px rgba(20,24,29,.1);border-color:var(--orange)}
   .thumb{height:150px;background:linear-gradient(135deg,var(--steel),var(--steel2));display:flex;align-items:center;justify-content:center;color:var(--orange);font-weight:800;font-size:30px;letter-spacing:1px;position:relative}
   .thumb::after{content:"";position:absolute;inset:0;background:repeating-linear-gradient(45deg,rgba(255,255,255,.03) 0 8px,transparent 8px 16px)}
+  .thumb img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+  .thumb.has-img::after{display:none}
   .cbody{padding:16px 16px 18px}
   .cbody .cat-tag{font-size:10px;font-weight:700;letter-spacing:1px;text-transform:uppercase;color:var(--orange)}
   .cbody h3{font-size:15px;font-weight:700;margin-top:5px;line-height:1.3}
@@ -121,9 +123,7 @@
   <aside class="sidebar">
     <h4>Categories</h4>
     <button class="cat active" data-cat="all">All Products<span class="cn">全部产品</span></button>
-    <!-- Roots 板块当前仅含 ESP 流化风机，下线 ESP 后备件为空，暂一并下线入口（2026-10-28）。恢复时删除此注释即可。
     <button class="cat" data-cat="roots">Roots Blowers<span class="cn">罗茨鼓风机</span></button>
-    -->
     <button class="cat" data-cat="valve">Industrial Valves<span class="cn">工业阀门</span></button>
     <button class="cat" data-cat="elec">Electrical &amp; Control<span class="cn">电气设备</span></button>
     <!-- ESP 分类按钮暂时下线（2026-10-28）。恢复时删除此注释即可。
@@ -144,6 +144,8 @@
     <div class="card" data-cat="roots"><div class="thumb">RB</div><div class="cbody"><div class="cat-tag">Roots Blower</div><h3>Blower, Fluidization (ESP)</h3><div class="cn">罗茨鼓风机 · 流化风机</div><div class="model">ESP FLUIDIZING BLOWER</div><a href="contact.html" class="inq">Inquire →</a></div></div>
     <div class="card" data-cat="roots"><div class="thumb">RB</div><div class="cbody"><div class="cat-tag">Roots Blower</div><h3>Heater 460V ESP Blower</h3><div class="cn">电加热流化风机</div><div class="model">HEATER 460V</div><a href="contact.html" class="inq">Inquire →</a></div></div>
     -->
+
+    <div class="card" data-cat="roots"><div class="thumb has-img"><img src="images/roots-blower-01.jpg" alt="Roots blower package unit with motor on base" loading="lazy"></div><div class="cbody"><div class="cat-tag">Roots Blower</div><h3>Roots Blower Package Unit</h3><div class="cn">罗茨鼓风机 · 整机（含电机、公共底座）</div><div class="model">MODELS ON INQUIRY</div><a href="contact.html" class="inq">Inquire →</a></div></div>
 
     <div class="card" data-cat="valve"><div class="thumb">IV</div><div class="cbody"><div class="cat-tag">Valve</div><h3>Check Valve DN25</h3><div class="cn">止回阀</div><div class="model">MB8407D / DN25</div><a href="contact.html" class="inq">Inquire →</a></div></div>
     <div class="card" data-cat="valve"><div class="thumb">IV</div><div class="cbody"><div class="cat-tag">Valve</div><h3>Globe Valve, Manual</h3><div class="cn">截止阀</div><div class="model">VALVE, GLOBE</div><a href="contact.html" class="inq">Inquire →</a></div></div>
